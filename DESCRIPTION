@@ -1,11 +1,22 @@
 Package: adventofcode21
 Type: Package
-Title: What the Package Does (Title Case)
+Title: My Solutions to the Advent of Code 2021
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Authors@R: c(person("Sam", "Tyner", email = "samantha.tyner@trituraig.com",
+                  role = c("aut", "cre")),
+                  person("Tristan", "Mahr", email = "tristan.mahr@wisc.edu",
+                  role = c("aut"))
+                  )
+Description: A fun way to practice R package development workflows 
+    and to keep the Advent of Code problems organized. Thanks, TJ!
+License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    dplyr,
+    rlang
+Remotes: tjmahr/aoc
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.1.1
